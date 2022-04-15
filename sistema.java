@@ -17,15 +17,16 @@ public class sistema {
         for (int i = 0; i < n; i++) {
             System.out.println("--------------------------------");
             System.out.println("nome :" + nome[i]);
+            System.out.println("Sobrenome :" + sobrenome[i]);
             System.out.println("Cpf ou Cnpj :" + cpf[i]);
             System.out.println("email :" + email[i]);
             System.out.println("telefone :" + telefone[i]);
             System.out.println("status :" + status[i]);
             System.out.println("bairro :" + endereco[i]);
-            System.out.println("rua:" + endereco[i]);
-            System.out.println("numero-da-casa:" + endereco[i]);
-            System.out.println("Quadra:" + endereco[i]);
-            System.out.println("lote:" + endereco[i]);
+            System.out.println("rua:" + rua[i]);
+            System.out.println("numero-da-casa:" + numero_da_casa[i]);
+            System.out.println("Quadra:" + Quadra[i]);
+            System.out.println("lote:" + lote[i]);
             ValidaCPF(cpf[i]);
             validaEmail(email[i]);
             Validatelefone(telefone[i]);
@@ -84,7 +85,7 @@ public class sistema {
         for (int i = 0; i < n; i++) {
             System.out.printf("nome: ");
             nome[i] = ler.next();
-            System.out.printf("Sobrenome: ");
+            System.out.printf("Sobrenome com mais de um nome usar (-): ");
             sobrenome[i] = ler.next();
             System.out.printf("Cpf ou Cnpj: ");
             cpf[i] = ler.next();
@@ -96,7 +97,7 @@ public class sistema {
             status[i] = ler.next();
             System.out.printf("bairro com 2 nomes usar (-) entre os nomes: ");
             endereco[i] = ler.next();
-            System.out.printf("rua: ");
+            System.out.printf("rua com mais de um nome usar (-): ");
             rua[i] = ler.next();
             System.out.printf("numero-da-casa: ");
             numero_da_casa[i] = ler.next();
