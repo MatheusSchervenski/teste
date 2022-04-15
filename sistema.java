@@ -6,6 +6,12 @@ public class sistema {
     static String[] telefone = new String[12];
     static String[] email = new String[12];
     static String[] status = new String[12];
+    static String[] endereco = new String[12];
+    static String[] rua = new String[12];
+    static String[] numero_da_casa = new String[12];
+    static String[] Quadra = new String[12];
+    static String[] lote = new String[12];
+    static String[] sobrenome = new String[12];
 
     public static void imprimir(int n) {
         for (int i = 0; i < n; i++) {
@@ -15,6 +21,11 @@ public class sistema {
             System.out.println("email :" + email[i]);
             System.out.println("telefone :" + telefone[i]);
             System.out.println("status :" + status[i]);
+            System.out.println("bairro :" + endereco[i]);
+            System.out.println("rua:" + endereco[i]);
+            System.out.println("numero-da-casa:" + endereco[i]);
+            System.out.println("Quadra:" + endereco[i]);
+            System.out.println("lote:" + endereco[i]);
             ValidaCPF(cpf[i]);
             validaEmail(email[i]);
             Validatelefone(telefone[i]);
@@ -73,6 +84,8 @@ public class sistema {
         for (int i = 0; i < n; i++) {
             System.out.printf("nome: ");
             nome[i] = ler.next();
+            System.out.printf("Sobrenome: ");
+            sobrenome[i] = ler.next();
             System.out.printf("Cpf ou Cnpj: ");
             cpf[i] = ler.next();
             System.out.printf("email: ");
@@ -81,6 +94,17 @@ public class sistema {
             telefone[i] = ler.next();
             System.out.printf("status: ");
             status[i] = ler.next();
+            System.out.printf("bairro com 2 nomes usar (-) entre os nomes: ");
+            endereco[i] = ler.next();
+            System.out.printf("rua: ");
+            rua[i] = ler.next();
+            System.out.printf("numero-da-casa: ");
+            numero_da_casa[i] = ler.next();
+            System.out.printf("Quadra: ");
+            Quadra[i] = ler.next();
+            System.out.printf("lote: ");
+            lote[i] = ler.next();
+
             System.out.println("-------------------------------");
         }
         imprimir(n);
